@@ -1,0 +1,114 @@
+@theme {
+  /* Minecraft-inspired palette — modern, not pixel-crunchy */
+  --color-grass-50: #f0f7eb;
+  --color-grass-100: #dcefd0;
+  --color-grass-300: #8bc46a;
+  --color-grass-500: #5d8c3e;
+  --color-grass-700: #3d5c28;
+  --color-grass-900: #1f2e14;
+
+  --color-dirt-400: #a67c3a;
+  --color-dirt-600: #8b6914;
+  --color-dirt-800: #5c4510;
+
+  --color-stone-300: #b8b8b8;
+  --color-stone-500: #7a7a7a;
+  --color-stone-700: #4a4a4a;
+  --color-stone-900: #2a2a2a;
+
+  --color-sky-300: #a8c8ff;
+  --color-sky-500: #78a7ff;
+  --color-sky-700: #4a7fd4;
+
+  --color-diamond-400: #6ef5e8;
+  --color-diamond-500: #4aedd9;
+  --color-diamond-700: #2bb8a8;
+
+  --color-emerald-500: #17dd62;
+  --color-gold-400: #ffe066;
+  --color-gold-500: #ffd700;
+  --color-gold-600: #d4af00;
+
+  --color-nether-500: #c1440e;
+  --color-nether-700: #8b0000;
+
+  --color-end-400: #a855f7;
+  --color-end-500: #7b2fbe;
+  --color-end-700: #5a1f8c;
+
+  --color-night-900: #0f0f1a;
+  --color-night-800: #1a1a2e;
+  --color-night-700: #252542;
+  --color-night-600: #32325a;
+
+  /* Semantic tokens */
+  --color-background: var(--color-night-900);
+  --color-surface: var(--color-night-800);
+  --color-surface-raised: var(--color-night-700);
+  --color-border: var(--color-stone-700);
+  --color-border-subtle: color-mix(in srgb, var(--color-stone-500) 35%, transparent);
+
+  --color-text-primary: #f4f4f8;
+  --color-text-secondary: #b8b8c8;
+  --color-text-muted: #8888a0;
+  --color-text-accent: var(--color-gold-400);
+
+  --color-primary: var(--color-grass-500);
+  --color-primary-hover: var(--color-grass-300);
+  --color-secondary: var(--color-diamond-500);
+  --color-danger: var(--color-nether-500);
+
+  /* Typography */
+  --font-display: 'Silkscreen', ui-monospace, monospace;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  /* Spacing scale */
+  --spacing-section-y: clamp(4rem, 10vw, 8rem);
+  --spacing-section-x: clamp(1rem, 4vw, 2rem);
+
+  /* Radius — subtle block feel */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-block: 0.125rem;
+
+  /* Shadows — depth without harshness */
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.25);
+  --shadow-md: 0 4px 12px rgb(0 0 0 / 0.35);
+  --shadow-lg: 0 8px 24px rgb(0 0 0 / 0.45);
+  --shadow-block:
+    inset 2px 2px 0 rgb(255 255 255 / 0.08),
+    inset -2px -2px 0 rgb(0 0 0 / 0.35),
+    0 4px 12px rgb(0 0 0 / 0.4);
+  --shadow-slot:
+    inset 2px 2px 4px rgb(0 0 0 / 0.55),
+    inset -1px -1px 0 rgb(255 255 255 / 0.06);
+
+  /* Animation tokens — reserved for future phases */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-cinematic: 900ms;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Breakpoints (reference — Tailwind defaults used in utilities) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
